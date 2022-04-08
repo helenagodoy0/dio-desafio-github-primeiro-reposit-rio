@@ -1,0 +1,105 @@
+Introdução ao Git e ao GitHub (5h)
+
+Um pouco da história do Git e como ele se tornou essencial para otimizar projetos dos desenvolvedores. Também vamos conhecer seus principais comandos, como funciona a plataforma e como ela pode simplificar o seu trabalho.
+
+1. Introdução ao Git
+
+- Entendendo o que é Git e sua importância
+		Git é um sistema de versionamento de código distribuído.
+
+2. Navegação via command line interface e instalação
+
+- Comandos básicos para um bom desempenho no terminal
+	- Listar as pastas: dir (win) ou ls (linux)
+	- Mudar de pastas: cd / (muda para a pasta base) ou cd windows (entra na pasta windows)
+		- cd .. (volta uma pasta de onde esta)
+	- Limpar o terminal: cls (win) ou clear (linux)
+	- Criar pastas: mkdir nomedapasta
+		- Criar arquivos: echo hello > hello.txt
+	- Deletar pastas: rmdir nomedapasta /S /Q (win) ou rm -rf nomedapasta (linux)
+		- Deletar arquivos: del nomedoarquivo (win)
+
+- Realizando a instalação do Git
+		Site Git: https://git-scm.com/
+
+3. Entendendo como o Git funciona por baixo dos panos
+
+- Tópicos fundamentais para entender o funcionamento do Git
+	- SHA1
+		- A sigla SHA significa Secure Hash Algorithm, é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
+		- A encriptação gera conjunto de caracteres identificador de 40 dígitos.
+		- É uma forma curta de representar um arquivo.
+				Comando para usar o SHA1 em um arquivo:
+					openssl sha1 texto.txt
+
+- Objetos internos do Git
+	- Objetos fundamentais
+			Existem 3 objetos fundamentais responsáveis pelo versionamento do código.
+		- BLOBS: é um tipo de armazenamento de dados do Git
+		- TREES: armazenam BLOBS. Monta toda a estrutura de onde estão os arquivos.
+		- COMMITS: objeto que junta todos os arquivos. Aponta para as trees e para os blobs.
+			Blobs, trees e commits também possuem SHA1.
+
+	- Sistema distribuído e seguro. 
+
+- Chave SSH e Token
+		- Chave SSH: é uma forma de estabelecer uma conexão segura e encriptada entre duas máquinas. Vai conectar o servidor do GitHub com a nossa máquina.
+		- Token de acesso pessoal: outro tipo de conexão segura, porém utiliza usuário e senha.
+
+4. Primeiros comandos com Git
+
+- Iniciando o Git e criando um commit
+	- Iniciar o Git: git init
+	- Iniciar o versionamento: git add
+	- Criar um commit: git commit
+
+5. Ciclo de vida dos arquivos no Git
+
+- Passo a passo no ciclo de vida
+		Quando se usa o Git init, está sendo criado um repositório no Git, dentro do diretório escolhido.
+	- Tracked ou Untracked: 
+		- Dentro dos arquivos que são rastreados pelo Git , pode se subdividir em 3 estágios diferentes (Unmodified, Modified, Staged).
+		- Untracked: arquivos que o Git ainda não tem ciência deles.
+		- Tracked: arquivos que o Git tem ciência deles.
+		- Unmodified: arquivos ainda não modificados.
+		- Modified: arquivos modificados.
+		- Staged: é onde ficam os arquivos que estão se preparando para fazer parte de outro tipo de agrupamento.
+
+
+	- Repositórios:
+		- Remote Repository: Servidor  (Github)
+
+		- Working Directory: Ambiente de desenvolvimento
+		- Staging Area: Ambiente de desenvolvimento
+		- Local Repository: Ambiente de desenvolvimento após o Commiit.
+
+	- Comandos:
+			git status: ele monitora os status dos arquivos (untracked, modified, staged).
+			git add nomeArquivo        -        passa um arquivo para Staged
+			git add *                  -        passa todos os arquivos do diretório para Staged
+			git add .
+			git commit -m "msg.."
+
+
+6. Introdução ao GitHub
+
+- Trabalhando com o GitHub
+	- Passar os arquivos do Repositório Local para um Repositório Remoto
+			Comandos:
+				git remote add origin linkdoGitHub     -      passa os arquivos do GitBash para o GitHub.
+						 'origin' é o apelido que foi dado ao repositório remoto.
+				git remote -v         -     Lista os repositórios  remotos que tem cadastrado.
+				git push origin master         -       'empurra' o repositório local para o repositório remoto
+								                    'master' é a branch utilizada.
+
+	- Baixar códigos de repositórios do Github
+			Comandos:
+				git clone linkdoGitHub      -      Baixa o repositório do GitHub para a máquina pessoal.
+				
+7. Resolvendo conflitos
+
+- Como conflitos acontecem no GitHub e como resolvê-los
+	- Quando você tem um código no GitHub que é igual ao código que está na máquina.  Uma pessoa pega clona esse código para uma segunda máquina. Ambos fazem alterações na mesma linha do código. 
+				Apenas alterar essa linha manualmente, e adicionar o código ao GitHub novamente.
+		Comandos:
+			git pull origin master     -      Puxa os arquivos do repositório remoto para o repositório local, para salvar alterações feitas e as duas versões ficarem igual.
