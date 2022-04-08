@@ -1,4 +1,4 @@
-Introdução ao Git e ao GitHub (5h)
+# Introdução ao Git e ao GitHub (5h)
 
 Um pouco da história do Git e como ele se tornou essencial para otimizar projetos dos desenvolvedores. Também vamos conhecer seus principais comandos, como funciona a plataforma e como ela pode simplificar o seu trabalho.
 
