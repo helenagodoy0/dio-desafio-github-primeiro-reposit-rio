@@ -1,0 +1,11 @@
+Comando Básicos
+
+git clone linkgithub	-	Clona o repositório da máquina para o GitHub
+
+git status	-	verifica a situação dos arquivos do repositório
+
+git add .	-	adiciona todos os arquivos do repositório local
+
+git commit -m "msg.."	-	commita os arquivos adicionados
+
+git push origin main	-	envia os commits para o repositório remoto

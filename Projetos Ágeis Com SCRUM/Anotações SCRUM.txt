@@ -1,0 +1,120 @@
+Projetos Ágeis Com SCRUM 
+
+SCRUM é um framework utilizado no gerenciamento ágil de projetos de software. Esse curso ensinará os fundamentos e práticas da metodologia.
+
+1. Introdução ao SCRUM
+
+- Introdução a Gestão de Projetos e ao SCRUM
+	Gestão de Projetos:
+	- Tradicional (Waterfall): só permite que o projeto avance quando uma fase está inteiramente completa.
+	- Ágil: Software construído por partes (incremental) e cada parte executa-se em um ciclo (iterativo).
+
+		SCRUM 
+	- É um dos frameworks de gerenciamento de projetos ágeis;
+	- Projetos usando equipes pequenas e multidisciplinares produzem os melhores resultados;
+	- Três pilares: transparência, adaptação e inspeção.
+		- Conversar mais e escrever menos;
+		- Demonstrar o software constantemente aos usuários e obter feedbacks constantes;
+		- Requisitos mudam ao longo do tempo;
+		- Aprender progressivamente com o uso do software. 
+	- Razões para adotar o SCRUM:
+		- Desenvolvido e entregue em partes menores, com constantes feedbacks do usuário;
+		- Melhor gerenciamento de riscos (redução de incertezas);
+		- Comprometimento, motivação e transparência da equipe (daily meeting);
+		- Maior valor para o negócio (priorização do backlog);
+		- Usuários envolvido durante todo o ciclo;
+		- Aplicação das Lições Aprendidas (melhoria continua).
+	- Características do time SCRUM:
+		- Equipes capazes de se auto-organizarem;
+		- As tarefas são do time e todos são responsáveis;
+		- Forte comprometimento com os resultados.
+
+- Papéis e responsabilidades de cada um do time
+	- Product Owner (PO)
+		- Representante da área de Negócios;
+		- Define as funcionalidades do software (Product Backlog);
+		- Prioriza as funcionalidades de acordo com o valor do negócio;
+		- Garante que o time de desenvolvimento entenda os itens do Backlog no nível necessário.
+	- Scrum Master (SM)
+		- Garantir o uso correto do SCRUM;
+		- Scrum Master não é Gerente de Projetos;
+		- Age como facilitador;
+		- Auxilia o Product Owner no planejamento e estimativas do backlog;
+		- Auxilia a equipe a remover impedimentos;
+		- Treina o time em autogerenciamento e interdisciplinaridade.
+	- Time de Desenvolvimento (DEV)
+		- Possui habilidades suficientes para desenvolver, testar, criar e desenhar, ou seja, tudo que for necessário para entregar o software funcionando.
+
+- Cerimônias do Scrum
+		Time box: tempo máximo para fazer uma cerimônia ou Sprint. Cada cerimônia tem seu próprio time box.
+		Sprint: 'corrida' é o principal evento do SCRUM.
+	
+	Composição de uma Sprint:
+	- Planejamento do Sprint;
+		- O que fazer? Como fazer?
+	- Reuniões Diárias (Daily Meeting);
+		- Acompanhamento das tarefas a fazer, sendo feitas e realizadas.
+	- Revisão da Sprint (Review);
+		- Time DEV apresenta para o PO o trabalho feito.
+	- Retrospectiva da Sprint.
+		- Reunião do time DEV para Lições Aprendidas (transparência).
+
+- Gestão de Projetos Tradicional x Ágil
+
+2. Fundamentos de um projeto ágil
+
+- Papéis e responsabilidades - Product Owner
+	- Release Planning: liberação ou lançamento de software, lançamento de nova versão oficial do produto de software. Cada vez que um produto de software é criado ou modificado, o fabricante e seus desenvolvedores decidem sobre como distribuir ou o novo produto ou a modificação às pessoas que o utilizam.
+	- Merge: união de Sprints (união dos códigos fonte).
+	- Existem 2 tipos de Release Planning:
+		- Release Planning de Múltiplas Squads: consiste em vários times de desenvolvimento agrupados, e no final da sprint eles devem ser agrupados (merge).
+		- Release Planning de Projeto: o PO possui uma demanda muita grande, e precisa dividir o projeto em diversas sprints. 
+
+	O PO Entende a demanda e extrai o maior valor possível.
+	O PO ajuda o time a entender a demanda e tira as dúvidas ao longo da sprint.
+	
+- Analisando escopo e definindo prioridades
+	- Product Backlog: é composto por Épicos e Estórias
+		- Épicos: incremento sem muito detalhamento, ajuda a te direcionar dos caminhos que deve seguir.
+		- Estórias: detalhamento dos épicos. Um épico normalmente se divide em várias estórias, onde ficam descritos o que deve acontecer e suas regras de negócio. 
+	- Escrevendo uma Estória:
+		- Nome da Estória
+		- Descrição da Estória (Eu, Como, Quero, Quando)
+		- Regras de Negócio (Separar Regras de Front-End de Regras de Back-End)
+		- Tela (Link ou imagem das telas a serem desenvolvidas)
+		- KPI (quais os objetivos/valor a estória precisa atingir)
+		- Tagueamento (Como a estória será 'Tagueada" para poder mensurar os KPI)
+		- Critérios de Aceite (Qual o Passo a Passo de todos os Caminhos Felizes possíveis a estória deve cumprir para que ela seja considerada aceita)
+
+Qual método é mais indicado para definir o Escopo do projeto? Entender qual o ganho antes de definir o escopo.
+O que compõe o Product Backlog ? Épico e Estória
+Qual a importância de mapear Riscos Positivos? Poder priorizar outros itens no backlog
+
+- Papel do PO na transformação digital
+		A transformação digital é um processo no qual as empresas fazem uso da tecnologia para melhorar o desempenho, aumentar o alcance e garantir resultados melhores. é uma mudança estrutural nas organizações dando um papel essencial para a tecnologia.
+		
+3. Conceitos e atividades essenciais para o sucesso de um projeto ágil
+
+- Aprenda sobre os conceitos e planejamento de tarefas
+	- Estórias, Tarefas e Épicos: Estórias são um conjunto de Tarefas. Épicos são um conjunto de Estórias.
+
+	Estória é uma tarefa descrita em nível de negócio.
+	Tarefa é um conjunto de atividades que o time de desenvolvimento deve desempenhar para entregar a estória.
+	
+	- Critério de Aceite: é uma lista de critérios que precisam ser alcançados para que a User Story (estória) atenda os requisitos do usuário e seja aceita pelo PO.
+		- Os critérios de aceitação têm o objetivo de: definir limites para as User Stories; Ajudar o PO a detalhar em alto nível o que é necessário para entregar valor ao cliente.
+
+	- Estimativa e Planejamento: 
+		- Planning Poker: os membros do desenvolvimento fazem uma estimativa da dificuldade, esforço e tempo necessário para realizar uma tarefa (estórias). 
+
+	- Cliente/Stakeholder: é uma pessoa ou um grupo que legitima as ações de uma organização e que tem um papel direto ou indireto na gestão e resultados dessa mesma organização. Desta forma, um stakeholder pode ser afetado positivamente ou negativamente, dependendo das suas politicas e forma de atuação.
+			Alguns exemplos de stakeholder de uma empresa podem ser os seus funcionários, gestores, gerentes, proprietários, fornecedores, concorrentes, ONGs, o Estado, credores, sindicatos e diversas outras pessoas ou empresas que estejam relacionadas com uma determinada ação ou projeto.
+
+- Rotinas de um time ágil:
+		Daily Meeting: feita diariamente para conversar sobre o andamento da Sprint. Apenas obrigatória para o Time DEV.
+		Retrospectiva: Feita apenas uma vez, após a entrega da Sprint. Obrigatória participação do SM e DEV.
+		Refinamento: Cerimonia não obrigatória, onde o time DEV alinha com o PO como será a realização da próxima Sprint. Aumentar o entendimento da demanda por parte do time e melhorar a qualidade da entrega e o retorno esperado para o projeto. Obrigatória para todo o time Scrum.
+			O refinamento acontece uma passo antes da Planning, ao final da Sprint anterior.
+		Review: Apresentação do time DEV de todo trabalho realizado na Sprint anterior, tirando duvidas técnicas que possam ocorrer. Obrigatória para todo o time Scrum e todos envolvidos na entrega do projeto. 
+			A Review verifica se a demanda agrega valor ao negócio.
+			

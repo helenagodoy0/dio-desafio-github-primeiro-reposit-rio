@@ -29,12 +29,12 @@ Um pouco da história do Git e como ele se tornou essencial para otimizar projet
 		- A sigla SHA significa Secure Hash Algorithm, é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
 		- A encriptação gera conjunto de caracteres identificador de 40 dígitos.
 		- É uma forma curta de representar um arquivo.
-				Comando para usar o SHA1 em um arquivo:
+			Comando para usar o SHA1 em um arquivo:
 					openssl sha1 texto.txt
 
 - Objetos internos do Git
 	- Objetos fundamentais
-			Existem 3 objetos fundamentais responsáveis pelo versionamento do código.
+		Existem 3 objetos fundamentais responsáveis pelo versionamento do código.
 		- BLOBS: é um tipo de armazenamento de dados do Git
 		- TREES: armazenam BLOBS. Monta toda a estrutura de onde estão os arquivos.
 		- COMMITS: objeto que junta todos os arquivos. Aponta para as trees e para os blobs.
@@ -65,10 +65,8 @@ Um pouco da história do Git e como ele se tornou essencial para otimizar projet
 		- Modified: arquivos modificados.
 		- Staged: é onde ficam os arquivos que estão se preparando para fazer parte de outro tipo de agrupamento.
 
-
 	- Repositórios:
 		- Remote Repository: Servidor  (Github)
-
 		- Working Directory: Ambiente de desenvolvimento
 		- Staging Area: Ambiente de desenvolvimento
 		- Local Repository: Ambiente de desenvolvimento após o Commiit.
@@ -85,21 +83,24 @@ Um pouco da história do Git e como ele se tornou essencial para otimizar projet
 
 - Trabalhando com o GitHub
 	- Passar os arquivos do Repositório Local para um Repositório Remoto
-			Comandos:
-				git remote add origin linkdoGitHub     -      passa os arquivos do GitBash para o GitHub.
-						 'origin' é o apelido que foi dado ao repositório remoto.
-				git remote -v         -     Lista os repositórios  remotos que tem cadastrado.
-				git push origin master         -       'empurra' o repositório local para o repositório remoto
-								                    'master' é a branch utilizada.
+		Comandos:
+			git remote add origin linkdoGitHub	-	passa os arquivos do GitBash para o GitHub.
+						'origin' é o apelido que foi dado ao repositório remoto.
+			git remote -v         -     Lista os repositórios  remotos que tem cadastrado.
+			git push origin master         -       'empurra' o repositório local para o repositório remoto
+						'master' é a branch utilizada.
 
 	- Baixar códigos de repositórios do Github
-			Comandos:
-				git clone linkdoGitHub      -      Baixa o repositório do GitHub para a máquina pessoal.
+		Comandos:
+			git clone linkdoGitHub      -      Baixa o repositório do GitHub para a máquina pessoal.
 				
 7. Resolvendo conflitos
 
 - Como conflitos acontecem no GitHub e como resolvê-los
 	- Quando você tem um código no GitHub que é igual ao código que está na máquina.  Uma pessoa pega clona esse código para uma segunda máquina. Ambos fazem alterações na mesma linha do código. 
-				Apenas alterar essa linha manualmente, e adicionar o código ao GitHub novamente.
-		Comandos:
-			git pull origin master     -      Puxa os arquivos do repositório remoto para o repositório local, para salvar alterações feitas e as duas versões ficarem igual.
+		Apenas alterar essa linha manualmente, e adicionar o código ao GitHub novamente.
+
+	Comandos:
+		git pull origin master     -      Puxa os arquivos do repositório remoto para o repositório local, para salvar alterações feitas e as duas versões ficarem igual.
+
+
