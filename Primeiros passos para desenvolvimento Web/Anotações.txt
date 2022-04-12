@@ -1,0 +1,167 @@
+Primeiros passos para desenvolvimento Web (6h)
+
+Introdução do que é internet, o que significa e como funcionam os seus principais termos. Aprenda também como os dispositivos se conectam através de diferentes tipos de rede e construa a sua primeira aplicação online.
+
+1. O que é internet
+
+- Introdução ao tema
+	- História:
+		- 1969 - EUA. Arpanet (Departamento de Defesa dos EUA).
+		- 1982 - Universidades. Holanda, Dinamarca e Suécia.
+		- 1987 - Liberado o uso comercial nos EUA.
+		- 1992 0 CERN cria o World Wide Web. Dados acessíveis a qualquer pessoa com acesso à internet.
+	- No Brasil:
+		- 1988 - FAPESP, UFRJ, LNCC
+		- 1994 - Uso comercial. EMBRATEL.
+		- 2000 - Banda Larga.
+	
+- Termos-chave
+		Apresentação dos termos mais utilizados na internet.
+		
+- A internet atualmente
+		Dados estatísticas do uso da internet pela população no Brasil.
+
+2. Como funciona a internet
+
+- O que são redes
+	- Redes
+	- Backbone: são estruturas que gerenciam as conexões e que interligam outras redes.
+	- Provedor de acesso: são as empresas telefônicas, que contratam o sinal do backbone e o repassam ao usuário final.
+	- Provedor de serviço: Dial-up, ADSL (Banda Larga), Fibra ótica, Rádio, Satélite, Móvel, P2P* (peer to peer).
+
+3. TCP/IP, portas, roteadores, switches e modems
+
+- TCP/IP e UDP
+		Transmission Control Protocol - Protocolo de Controle de Transmissão.
+		Internet Protocol - Protocolo de Internet.
+	- São protocolos de comunicação entre computadores em rede;
+	- Ambos usam o modelo de camadas;
+	- Uma comunicação entre dispositivos possui 4 camadas (etapas):
+		- Física (placa de rede);
+		- Rede (IP);
+		- Transporte (TCP, UDP);
+		- Aplicação (FTP, SMTP, HTTP).
+
+		UDP: é uma forma de conexão entre dispositivos na internet.
+		- Rápido;
+		- Não confiável (não tem confirmação de envio/recebimento);
+		- Livestream.
+		TCP:
+		- Voltado à conexão;
+		- Handshake (confirmação de envio/recebimento);
+		- Integridade, ordem dos dados;
+		- Aplicativo de mensagens de texto.
+
+- Portas
+	20: FTP
+	22: SSH
+	25: SMTP
+	53: DNS
+	80: HTTP
+	443: HTTPS
+
+- Roteadores, switches e modems
+	- Modem:
+		- Modulator-demodulator.
+		- Hardware que converte dados em um formato que possa ser transmitido de um computador para outro e lido por outro.
+	- Roteador:
+		- Distribui internet para um ou mais dispositivos de uma rede.
+		- Pode fazer a comunicação entre redes.
+	- Switch
+		- Distribui internet para um ou mais dispositivos de uma rede.
+		- Criado para ser 'inteligente', ele transmite os dados apenas para o dispositivo que pediu.
+
+4. Celular, internet e outros dispositivos
+
+- Dados móveis
+	- Quando o celular está conectado em uma rede, ele fica constantemente trocando pacotes, alguns bits, com as torres de comunicação.
+
+- Wi-Fi
+			IEEE 802.11: 2,4 GHz, 2 Mbps;
+			IEEE 802.11a: 5 GHz, 54 Mbps;
+			IEEE 802.11b: 2,4 GHz, 11 Mbps (diminuição de interferência);
+			IEEE 802.11g: 2,4 GHz, 54 Mbps;
+			IEEE 802.11n: 2,4 GHz/5 GHz, 150-600 Mbps;
+		Os roteadores mais modernos conseguem trabalhar em todos os padrões.
+		
+	- Segurança:
+		- WEP: chaves de 64 bits e de 128 bits;
+		- WPA: chave trocada periodicamente;
+		- WPA2 (AES) (802.11i): tem mais segurança, mas requer mais processamento.
+
+- Bluetooth
+		É uma conexão ponto a ponto e não depende da internet para funcionar.
+
+5. Browser, sites, aplicativos e webservers
+
+- Browser
+	- Browser: É um software que interpreta as linguagens de programação (LP) e as transforma em algo compreensível por um humano.
+			Sabe identificar várias LP, linguagens de marcação (html) e conteúdo multimidia.
+
+- Site, aplicativo e e-commerce
+	- Site: página da internet, podem ser feitas em diversar LP.
+	- Aplicativo: software que é executado no navegador. 
+			Um app de celular, muitas vezes, nada mais é do que uma espécie de navegador.
+			Está sumindo a diferença terminológica entre programa/software e aplicativo.
+	- E-Commerce: comércio eletrônico. Site de compra e venda com sistema de pagamento.
+
+- Web-server
+		Existem 2 tipos: estáticos e dinâmicos.
+	- Estático: é um servidor físico onde são armazenados arquivos, softwares e/ou bando de dados.
+	- Dinâmico: se refere aos softwares que estão presentes no servidor físico.
+		- Arquivos (file server);
+		- Aplicações (application server);
+		- Banco de dados (database);
+			Um site/aplicativo precisa estar hospedado em um servidor para poder ser acessado.
+			Os dados de um site precisam estar em um servidor.
+			O banco de dados de um site/aplicativo precisam estar em um servidor.
+			
+	- Web-service: interface disponível para fazer requisições e  consultas em bancos de dados inacessíveis (Correios, Governo).
+
+6. O que são Stacks
+
+- Stacks
+		Stack é o ambiente tecnológico com todas as suas ferramentas e capacidades disponíveis.
+	- Conjunto de softwares necessários e suficientes para executar um aplicativo/programa.
+	- Ambientes e ferramentas de interação com o app/sw.
+	- Capacidade e limitação de performance.
+		
+		Importância:
+		- Os líderes de projetos precisam das informações das equipes de desenvolvimento.
+		- Os desenvolvedores precisam saber as limitações e capacidades das ferramentas e ambientes que têm disponíveis.
+		- Sistemas, bandos de dados, linguagens de programação, protocolos de comunicação.
+		- Estratégias de negócios, maturidade da empresa.
+		- Contratações, planos de mitigações de riscos, aumento da capacidade, uso dos dados.
+
+- Definição de Front-end, Back-end e Fullstack
+	- Front-End
+		- "Parte da frente";
+		- Site, software, aplicativo, web service;
+		- Interface, UI, UX;
+		- Lógica de programação, HTML, CSS, jQuery/JS/AJAX, PHP, Bootstrap/outros frameworks.
+
+	- Back-End
+		- "Parte de trás";
+		- Servidores, bancos de dados;
+		- "Meio de campo" entre interface e bancos de dados, regras de negócios, validações;
+		- MySQL, Oracle, protocolos de comunicação, PHP, Java, node.js.
+
+	- Full stack
+		- Profissional que sabe trabalhar em todas as camadas das tecnologias de desenvolvimento/execução de um app/sw.
+
+7. LPs e termos
+
+- Principais LPs
+	- HTML, CSS, JavaScript (jQuery, AJAX, diversas libs), PHP, .NET, ASP, Java, Ruby (on Rails), Python, Perl, C/C++/C#
+
+- Diversos termos comuns
+		- 404, Algoritmo, ALT (texto alternativo), API (funcionalidade para se colocar em um site que realiza outras funções), Aplicação, Back-end, Biblioteca/dll (conjunto de ferramentas que possibilitam recursos extras), Bootstrap (framework de JavaScript), Breakpoints (pontos chave de aplicações ou pontos de parada para realização de debugs), Browser/navegador, Bug, Cache, Controle de versão (sw que controlam versões), Cookies.
+		- Debug, Deploy (pacote que manda para ser publicado), Design adaptativo/responsivo (quando se adequa a qualquer tipo de tela), DNS, Domínio, DPI (proporção de pontos na tela), Estrutura de Dados, Favicon (ícone que representa o site), Framework (ferramenta para desenvolver o sw), Front-end, FTP (protocolo de comunicação para troca de arquivos), Full-stack, Github/SVN/CV.
+		- HTTP(S), IP, Meta tags (são tags html que tem funções especificas), Método ágil (visam um desenvolvimento melhor e mais rápido) , Mobile, MVC (model view controler, arquitetura de software que separa o modelo, a visão e o controle), MVP (produto viável mínimo, mínimo de desenvolvimento que pode ser testado ou usado), MySQL, Pixel, Servidor, Sistema operacional, Solução, SSL (camada de segurança do site), UI, UX, Versão, WYSIWYG ("What You See Is What You Get" ferramentas de edição e desenvolvimento que permitem visualizar, em tempo real, exatamente aquilo que será publicado).
+
+8. Construindo a primeira aplicação
+
+- Aula prática
+	- XAMPP - ambiente de desenvolvimento.
+	- jqueryui.com
+	- w3schools.com

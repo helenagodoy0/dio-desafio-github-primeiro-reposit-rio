@@ -1,0 +1,141 @@
+Introdução a criação de websites com HTML5 e CSS3
+
+Um pouco da história di HTML5 e do CSS3, como funciona a estrutura básica dessas tecnologias, sua semântica, principais elementos e comandos.
+
+1. Introdução ao curso de HTML
+
+- Estrutura básica
+		HTML 1 - 1991
+		HTML 2 - 1995
+		HTML 3 - 1997
+		HTML 4 - 1997
+		HTML 5 - 2014
+		
+		<html>                                                #abre a tag html
+			<head>                                     #metainformações - informações que o navegador necessita
+				<meta>                             #por exemplo,  como o navegador faz o encode dos caracteres
+				<title></title>                #poe o titulo na aba do navegador
+			</head>
+			<body>                                        # conteúdo da página
+			</body>
+		</html>
+
+2. Entendendo o que é semântica
+
+- Semântica
+	- <section>: seção genérica
+	- <header>: cabeçalho
+	- <article>: conteúdo relevante
+	- <aside>: conteúdo relacionado ao conteúdo da página (em barra lateral)
+	- <footer>: rodapé
+	- <h1>-<h6>: importância do titulo em uma página (só pode um h1)
+
+3. Como usar textos e links em HTML
+
+- Tags para textos
+	- <p> paragrafo (conteúdo da página)
+
+- Tags para links
+	- <a>Link</a>
+		- <a href="www.linkedin.com/in/helena-sgodoy">LinkedIn</a>
+		- <a href="mailto:hsgodoy92@gmail.com">E-mail</a>
+		- <a target="_blank"Link</a> - Serve para indicar como o link será aberto
+
+4. Como inserir imagens em seu site
+
+- Tag img
+	- <img>
+		- <img src="img/avatar.jpg"> - guarda o caminho da imagem
+		- <img alt="Foto genérica"> - descrição da imagem
+
+5. Como organizar listas com HTML
+
+- Tags li, ul e ol
+	- <ul>  -  representa uma lista em que a ordem não importa
+	- <ol>  -  lista onde a ordem importa
+	- <li>  -  item da lista
+
+----------------------------------------------------------------------------------------
+
+6. Introdução e conceitos básicos de CSS3
+
+- Introdução ao CSS3
+	- CSS é uma linguagem de estilo. 
+		- É formado por seletores (a, p h1) e declarações (color, font-size).
+	- Estiliza uma tag, assim todas serão da mesma forma.
+
+	- ID x Classe
+			. header { }     -        O ponto indica que é uma Classe
+			# header { }    -        O # indica que é um ID. ID só pode ser usado 1 vez na página.
+			
+- Conceitos básicos
+	- Box Model
+		- Margin: margem, espaçamentos entre elementos
+		- Border: borda, circundam o padding e o conteúdo
+		- Padding: espaçamento entre a borda e o conteudo
+		- Content: é o que o bloco representa
+
+7. Estilizando elementos, textos e listas
+
+- Estilizando elementos
+	- Pading e Margin: podem ser adicionados valores de diferentes eixos
+			padding: 15px(topo) 10px(direita) 5px(inferior) 0(esquerda)
+			ou
+			padding-top: 15px;
+			padding-right: 10px;
+			
+	- Background:
+			background-color
+			background-image
+			background-position
+			
+	- Border:
+		- Largura, cor, estilo
+			border: 3px solid blue;
+			border-top: 2px dotted green;
+			border-right: 4px dashed pink;
+			border-bottom: 1px solid purple;
+			border-left: 4px dotted cyan;
+			
+			border-radius: 10px;                    -     arredonda os cantos de um elemento.
+			border-radius: 10% 20%;
+
+- Estilizando textos
+	- font-family: altera a fonte do texto
+			#title {
+				font-family: Verdana;
+			}
+			.subtitle{
+	- font-size: altera o tamanho do texto
+	- font-style: altera a aparência do texto (normal, italic)
+	- font-weight: altera o peso do texto (normal, bold)
+	- text-transform: alterna o texto entra maiúsculo e minusculo
+			#title {
+				text-transform: uppercase;
+			}
+			.subtitle {
+				text-transform: lowercase;
+			}
+			.post_title {
+				text-transform: capitalize;
+			}
+			
+	- text-decoration: usado para dar destaque ao texto, adiciona linhas
+			underline, overline, line-through
+
+- Estilizando listas
+	- list-style-type: square, upper-roman...
+		- pode-se alterar para um simbolo também. ex: \1F44D
+		- pode usar imagens para os marcadores também:
+				ul {
+				list-style-type: url("rocket.png");
+				}
+
+8. Dimensão e alinhamento
+
+- Propriedades de dimensões e alinhamentos
+	- Width, Height: servem pra ajustar a largura e altura.
+	- Max-width, max-height: largura e altura máxima que um elemento pode ter
+	- Margin: adiciona espaçamento entre elementos, e alinhas elementos automaticamente
+	- Text Align: alinha textos.
+
