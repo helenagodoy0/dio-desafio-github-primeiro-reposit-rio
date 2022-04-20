@@ -1,0 +1,35 @@
+Debugging e Error Handling (2h)
+
+1. Tipos de erros
+
+- ECMAScript Error e DOMException
+		ECMAScript Error: Erros que ocorrem em tempo de execução.
+			Composto por: mensagem, nome, linha, call stack.
+			
+		DOMException: Erros relacionados a códigos que estão sendo executados em páginas web.
+		(DOM: Document Object Model)
+
+2. Tratando erros
+
+- Throw, Try/Catch e Finally
+		Throw: Retorna um erro na forma de erro mesmo.
+			Exemplos:
+				if (!string) return "string invalida";      //retorna uma string
+				if (!string) throw "strinf invalida";       //retorna um erro
+				
+		Try/Catch: é uma declaração que dentro do bloco 'try' vc verifica um pedaço do código, e se tiver algum erro, ele vai ser capturado pelo 'catch'.
+				O catch permite que manipule o erro de maneira mais personalizada e organizada.
+		
+		Finally: pode ser adicionado no bloco try/catch. É uma instrução que será chama independente se tem um erro ou não.
+
+3. Criando erros
+
+- O objeto Error
+			new Error (message, fileName, lineNumber)        //todos os parâmetros são opcionais.
+			const MeuErro = new Error('Mensagem inválida');
+			throw MeuErro;
+		
+		Dando um nome ao erro:
+			const MeuErro = new Error('Msg inválida');
+			MeuErro.name = 'InvalidMessage';
+			throw MeuErro;

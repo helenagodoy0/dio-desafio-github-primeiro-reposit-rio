@@ -1,0 +1,40 @@
+JavaScript Assíncrono  (1h)
+
+1. Assincronicidade
+
+- Definição, Promises e Async/Await
+		Assíncrono: Algo que não ocorre ou não se efetiva ao mesmo tempo.
+		Por padrão, o JS roda de maneira síncrona.
+		
+		Promises: é um objeto de processamento assíncrono. Inicialmente, seu valor é desconhecido. Ela pode, então, ser resolvida ou rejeitada.
+			Resolvido: .then()
+			Rejeitado: .catch()
+			Tem 3 estados:
+			- Pending (pendente);
+			- Fulfilled (completo);
+			- Rejected (rejeitado);
+		
+
+		Async/await: Funções assíncronas precisam dessas duas palavras chaves.
+					(Espera a promise resolver para continuar rodando o código).
+					Para ter a promise resolvida, precisa adicionar o await no final.
+					Também pode utilizar o try/catch para adicionar o await.
+		
+2. Consumindo APIs
+
+- O que são APIs e Fetch
+		APIs: Application Programming Interface
+			Uma API é uma forma de intermediar os resultados do back-end com o que é apresentado no front-end.
+			Pode acessa-las por meio de URLs.
+			
+		JSON: JavaScript Object Notation
+			É muito comum que APIs retornem seus dados no formato .json, portanto precisamos tratar esses dados quando os recebermos.
+			
+		Fetch: 
+			fetch(url, options) {
+			}
+				.then(response => response.json() );
+				.then(then => console.log(json) );
+			//retorna uma promise
+			
+			Possui operações no banco (POST, GET, PUT, DELETE, etc).
